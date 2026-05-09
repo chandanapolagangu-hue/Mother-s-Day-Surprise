@@ -1,0 +1,247 @@
+
+    .imperial-script-regular {
+  font-family: "Imperial Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+ 
+
+
+#first{
+    height:100vh;
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background-image:url('./assets/background.jpg');
+    background-size:cover;
+    background-position:center;
+
+    border-radius:20px;
+}
+
+h4{
+    font-size:60px;
+    color:white;
+    font-family:"Imperial Script", cursive;
+
+    margin-bottom:20px;
+    
+}
+
+button{
+    padding:15px 30px;
+    font-size:20px;
+
+    border:none;
+    border-radius:10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    cursor:pointer;
+
+    background:white;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+img{
+    width:100%;
+    border-radius:15px;
+    margin-top:15px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffe6f0, #ffd1dc, #fff0f5);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #d63384;
+}
+
+#start-btn {
+    background-color: #fff;
+    border: 2px solid #d63384;
+    color: #d63384;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#start-btn:hover {
+    background-color: #d63384;
+    color: #fff;
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #d63384;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+/* Left side items */
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+/* Right side items */
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+/* Connector circles */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: #d63384;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Circle position for left and right */
+.timeline-item.left::before {
+  right: -10px;
+}
+
+.timeline-item.right::before {
+  left: -10px;
+}
+
+
+
+/* Card styling */
+.timeline-item .content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #f8a1c4;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Animation */
+.hidden {
+  opacity: 0;
+  transform: scale(0.9) translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+#next {
+    padding: 10px 20px;
+  font-size: 1.1rem;
+  border: 2px solid #d63384; /* pink border */
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  background-color: #fff;
+  color: #d63384; /* pink text */
+  transition: all 0.3s ease;
+}
+
+#next:hover {
+    background-color: #d63384; /* pink background on hover */
+  color: #fff; /* white text on hover */
+  transform: scale(1.05);
+}
+
+.page2-body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe6f0, #ffd1dc, #fff0f5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.letter-section.glass {
+  max-width: 700px;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  color: #333;
+  text-align: left;
+}
+
+
+
+
+#letter-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background-color: #d63384;
+  margin-left: 5px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
